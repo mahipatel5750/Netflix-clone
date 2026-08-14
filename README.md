@@ -25,7 +25,8 @@ https://netflix-clone-patel-mahi.vercel.app/
 
 ### Trending Now
 
-<img width="1917" height="942" alt="image" src="https://github.com/user-attachments/assets/0a56c4e6-6256-4ebf-89af-83c140dec3bf" />
+
+<img width="1906" height="903" alt="image" src="https://github.com/user-attachments/assets/55252c6f-65de-4887-b263-939775591d39" />
 
 
 ## ✨ Features
