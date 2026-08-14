@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="opsBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A192F" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="bottomFadeSpec" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(2,6,23,0)" />
+      <stop offset="65%" stop-color="rgba(2,6,23,0.85)" />
+      <stop offset="100%" stop-color="#141414" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#opsBg)" />
+
+  <!-- Cyber Grid Lines -->
+  <path d="M 0,200 L 1200,200 M 0,350 L 1200,350 M 0,500 L 1200,500" stroke="#1E293B" stroke-width="2" />
+  <path d="M 300,0 L 300,700 M 600,0 L 600,700 M 900,0 L 900,700" stroke="#1E293B" stroke-width="2" />
+
+  <!-- Intelligence Operative Silhouette -->
+  <g transform="translate(680, 120)">
+    <circle cx="80" cy="70" r="40" fill="#FFCC80" />
+    <path d="M 35,55 C 35,15 125,15 125,55 Z" fill="#0F172A" />
+    <path d="M 15,115 L 145,115 L 165,400 L -5,400 Z" fill="#020617" stroke="#38BDF8" stroke-width="2" />
+  </g>
+
+  <!-- Dark Bottom Gradient -->
+  <rect y="300" width="1200" height="400" fill="url(#bottomFadeSpec)" />
+
+  <!-- SPECIAL OPS Title -->
+  <g transform="translate(100, 460)">
+    <text x="0" y="55" font-family="'Inter', sans-serif" font-weight="900" font-size="64" fill="#38BDF8" letter-spacing="4">SPECIAL OPS 1.5</text>
+  </g>
+</svg>

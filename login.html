@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix - Sign In</title>
+  <link rel="icon" type="image/x-icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+  <!-- Google Fonts Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: radial-gradient(ellipse at top center, #3d050a 0%, #000000 70%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sign In Header Bar -->
+  <header class="signin-navbar">
+    <div class="signin-nav-container">
+      <a href="index.html">
+        <img src="images/Netflix_Logo.png" alt="Netflix" class="signin-logo">
+      </a>
+    </div>
+  </header>
+
+  <!-- Sign In Main Content -->
+  <main class="signin-body">
+    <div class="signin-card">
+      <h1 class="signin-title">Enter your info to sign in</h1>
+      <p class="signin-subtitle">Or get started with a new account.</p>
+
+      <form class="signin-form" action="index.html" onsubmit="event.preventDefault(); alert('Signed in successfully!'); window.location.href='index.html';">
+        <div class="signin-input-group">
+          <label for="signin-email">Email or mobile number</label>
+          <input type="text" id="signin-email" value="salonipatel.sa89@gmail.com" required autocomplete="email">
+        </div>
+
+        <button type="submit" class="btn-signin-continue">Continue</button>
+      </form>
+
+      <div class="signin-help-toggle" id="signin-help-toggle" onclick="toggleSignInHelp()">
+        <span>Get Help</span>
+        <i class="fa-solid fa-chevron-down caret-icon" id="help-caret"></i>
+      </div>
+      <div class="signin-help-content" id="signin-help-content">
+        <p><a href="#">Forgot email or password?</a></p>
+        <p><a href="#">Need help signing in?</a></p>
+      </div>
+
+      <p class="signin-recaptcha">This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+    </div>
+  </main>
+
+  <script>
+    function toggleSignInHelp() {
+      const content = document.getElementById('signin-help-content');
+      const caret = document.getElementById('help-caret');
+      if (content) {
+        content.classList.toggle('active');
+      }
+      if (caret) {
+        if (content.classList.contains('active')) {
+          caret.classList.replace('fa-chevron-down', 'fa-chevron-up');
+        } else {
+          caret.classList.replace('fa-chevron-up', 'fa-chevron-down');
+        }
+      }
+    }
+  </script>
+</body>
+</html>
