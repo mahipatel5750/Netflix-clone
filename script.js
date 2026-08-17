@@ -1209,7 +1209,7 @@ function extractNameFromEmail(input) {
     !input.trim()
   ) {
 
-    return 'Mahi Patel';
+    return 'User';
 
   }
 
@@ -1255,7 +1255,7 @@ function extractNameFromEmail(input) {
           word.slice(1).toLowerCase()
       )
       .join(' ') ||
-      'Mahi Patel';
+      'User';
 
   }
 
@@ -1340,7 +1340,7 @@ window.handleSignInSubmit =
 // ============================================================
 
 function signInUser(
-  name = 'Mahi Patel'
+  name = 'User'
 ) {
 
   isLoggedIn =
